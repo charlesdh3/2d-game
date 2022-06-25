@@ -7,7 +7,7 @@ class Game:
 		  
 		# general setup
 		pygame.init()
-		self.screen = pygame.display.set_mode((WIDTH,HEIGTH))
+		self.screen = pygame.display.set_mode((WIDTH,HEIGTH), pygame.HWSURFACE | pygame.DOUBLEBUF | pygame.SCALED, vsync=1)
 		pygame.display.set_caption('Tales of Krandor')
 		Icon = pygame.image.load('graphics/icons/icons8-sword-64.png')
 		pygame.display.set_icon(Icon)
